@@ -1,0 +1,30 @@
+body{
+    background-color: #154553;
+}
+
+table{
+    background-color: rgb(15, 14, 14);
+    text-align: left;
+    width: 100%;
+}
+th, td{
+    color: aliceblue;
+    border: solid 1px black;
+    padding: 20;
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #0f362d;
+    color: white;
+}
+h2{
+    margin-left: 400px;
+    color: aliceblue;
+}
+a{
+    color: aqua;
+}
+tr:hover td{
+    background-color: #369681;
+    color: white;
+}

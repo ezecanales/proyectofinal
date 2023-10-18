@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #23242a;
+
+    
+}
+
+.box{
+    position: relative;
+    width: 420px;
+    height: 450px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    }
+
+    .box::before{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background:linear-gradient(0deg, transparent,
+        transparent, #45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        transform-origin: bottom right;
+        animation: brillito 6s linear infinite;
+   }
+
+   
+   .box::after{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background:linear-gradient(0deg, transparent,
+        transparent, #45f3ff,#45f3ff,#45f3ff);
+        z-index: 1;
+        transform-origin: bottom right;
+        animation: brillito 6s linear infinite;
+        animation-delay: -4s;
+
+    }
+    @keyframes brillito{
+        0%
+    
+
+    {   
+        transform: rotate(0deg)
+    }
+        100%
+    {
+        transform:rotate(-360deg)
+    }
+}
+
+.borderLine{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background:linear-gradient(0deg, transparent,
+    transparent, green green green);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: brillito 6s linear infinite;
+    animation-delay: -1.5s;
+    
+   }
+   .borderLine::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background:linear-gradient(0deg, transparent,
+    transparent, green green green);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: brillito 6s linear infinite;
+    animation-delay: 1.5s;
+   }
+   .borderLine::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background:linear-gradient(0deg, transparent,
+    transparent, green green green);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: brillito 6s linear infinite;
+    animation-delay: 1.5s;
+   }
+   @keyframes brillito{
+    0%
+
+
+{   
+    transform: rotate(0deg)
+}
+    100%
+{
+    transform:rotate(-360deg)
+}
+   }
+    .box form{
+        position: absolute;
+        inset: 4px;
+        background: #222;
+        padding: 50px 40px;
+        border-radius: 8px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box form h2{
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+
+    .box form .inputbox{
+        position: relative;
+        width: 150px;
+        margin-top: 25px; 
+    }
+
+    .box form .inputbox input{
+        position: relative;
+        width: 100%;
+        padding: 20px 10px 10px;
+        background: transparent;
+        outline: none;
+        box-shadow: none;
+        color: #23242a;
+        font-size: 1em;
+        letter-spacing: 0.05cm;
+        transition: 0.5s;
+        z-index: 10;
+    }
+
+    .link{
+        text-align: center;
+        color: aliceblue;
+
+    }

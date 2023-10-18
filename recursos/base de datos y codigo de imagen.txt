@@ -1,0 +1,67 @@
+drop database if exists proyecto_resenias;
+CREATE DATABASE if not exists proyecto_resenias;
+USE proyecto_resenias;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE `usuario` (
+	`idusuario` varchar(100) NOT NULL,
+    	`contra` varchar(100) NOT NULL,
+	`tipousuario` varchar(100) NOT NULL,
+	PRIMARY KEY (`idusuario`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `empleados`
+--
+
+CREATE TABLE `reseñas` (
+	`idprod` varchar(100) NOT NULL,
+	`img` longblob NOT NULL,
+    `tipoproducto` varchar(100) NOT NULL,
+	`nombreprod` varchar(100) NOT NULL,
+	`tiempouso` varchar(100) NOT NULL,
+	`marca` varchar(100) NOT NULL,
+	`lugarcompra` varchar(100) NOT NULL,
+	`descripcion` varchar(200) NOT NULL,
+	PRIMARY KEY (`idprod`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+
+
+<div class="form-group">
+                        <label for="img">seleccione una imagen:</label>
+                        <input id="img" name="img" type="file" class="form-control" required="required">
+                    </div>
+
+
+
+
+public function insertarResenia($idprod, $img, $tipoproducto, $nombreprod, $tiempouso, $marca, $lugarcompra, $descripcion){
+            $this->conectar();
+            $sql = "INSERT INTO `reseñas` (`idprod`,`img`, `tipoproducto`, `nombreprod`, `tiempouso`, `marca`, `lugarcompra`, `descripcion`) 
+            VALUES ('$idprod', '$img', '$tipoproducto', '$nombreprod', '$tiempouso', '$marca', '$lugarcompra', '$descripcion')";
+            $res = mysqli_query($this->con, $sql);
+            mysqli_close($this->con);
+            if($res){
+                return true;
+            }else{
+                return false;
+            }
+            
+        }
+
+
+$imagen = addslashes(file_get_contents($_FILES['img']['tmp_name']));
+
+
+$imagen = $row->imagen;
+<td><img height="50px" src="imagen/png;base64, <?php echo base64_encode($imagen) ?>"></td>

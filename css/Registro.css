@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(29, 37, 46);
+    font-family: sans-serif;
+}
+form{
+    margin-left: 500px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: black;
+    text-align: center;
+}
+form{
+    margin-top: 40px;
+    border: 2px solid #3a3a35;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 30%;
+    box-shadow: 10px 10px 20px 0px rgba(69, 68, 68, 0.75);
+}
+h1{
+    color: white;
+    font-size: 30px;
+    margin-left: 320px;
+    margin-bottom: 20px;
+}
+input{
+    color: white;
+    width: 70%;
+    margin-left: 70px;
+    height: 25px;
+    margin-bottom: 17px;
+    background: #3a3a35;
+    border: 2px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.btn{
+    border: 2px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 14px;
+    color: black;
+    height: 36px;
+    width: 30%;
+    background: yellow;
+    margin-left: 150px;
+}
+.form-group{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+form{
+    text-decoration: none;
+    color: yellow;
+}
